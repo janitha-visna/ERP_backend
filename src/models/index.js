@@ -1,8 +1,8 @@
-const User = require("./User");
-const Teacher = require("./Teacher");
-const Attendance = require("./Attendance");
-const Leave = require("./Leave");
-const FeeStructure = require("./FeeStructure");
+const User = require("../models/UserModel");
+const Teacher = require("../models/TeacherModel");
+const Attendance = require("../models/AttendanceModel");
+const Leave = require("../models/LeaveModel");
+const FeeStructure = require("../models/FeeStructureModel");
 
 // Define associations
 User.hasOne(Teacher, { foreignKey: "userId", as: "teacherProfile" });

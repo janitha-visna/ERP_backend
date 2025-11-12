@@ -1,19 +1,17 @@
-const EmployeeService = require("../services/EmployeeService");
-const AttendanceService = require("../services/AttendanceService");
-const LeaveService = require("../services/LeaveService");
-const HRDashboardService = require("../services/HRDashboardService");
+const EmployeeService = require("../service/EmployeeService");
+const AttendanceService = require("../service/AttendanceService");
+const LeaveService = require("../service/LeaveService");
+const HRDashboardService = require("../service/HRDashboardService");
 
 class HRController {
   async createEmployee(req, res) {
     try {
       const teacher = await EmployeeService.createEmployee(req.body);
-      res
-        .status(201)
-        .json({
-          success: true,
-          message: "Employee created successfully",
-          data: teacher,
-        });
+      res.status(201).json({
+        success: true,
+        message: "Employee created successfully",
+        data: teacher,
+      });
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
     }
