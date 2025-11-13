@@ -1,4 +1,7 @@
 const UserRepository = require("../repositories/UserRepository");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+
 
 class AuthService {
   async findByEmail(email) {

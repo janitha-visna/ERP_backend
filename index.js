@@ -4,7 +4,7 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 require("dotenv").config(); // Load .env first
 
-const sequelize = require("./config/database"); // Sequelize instance
+const sequelize = require("./src/config/database"); // Fixed path
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
 // ========== Import Models ==========
-require("./models");
+require("./src/models");
 
 // ========== Database Connection ==========
 sequelize
@@ -33,9 +33,9 @@ sequelize
   });
 
 // ========== Routes ==========
-app.use("/api/auth", require("./routes/AuthRoutes"));
-app.use("/api/hr", require("./routes/HrRoutes"));
-app.use("/api/finance", require("./routes/FinanceRoutes"));
+app.use("/api/auth", require("./src/Routes/AuthRoutes")); // Fixed path
+app.use("/api/hr", require("./src/Routes/HrRoutes")); // Fixed path
+app.use("/api/finance", require("./src/Routes/FinanceRoutes")); // Fixed pat
 
 // ========== Root Route ==========
 app.get("/", (req, res) => {
@@ -79,13 +79,12 @@ app.use((err, req, res, next) => {
 });
 
 // ========== 404 Handler ==========
-app.use("*", (req, res) => {
+app.use((req, res) => {
   res.status(404).json({
     success: false,
     message: "Route not found",
   });
 });
-
 // ========== Server Startup ==========
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
