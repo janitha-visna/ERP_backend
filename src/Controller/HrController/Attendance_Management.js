@@ -1,7 +1,7 @@
 const { Op } = require("sequelize");
-const Teacher = require("");
-const Attendance = require("..");
-const AttendanceService = require("../service/AttendanceService");
+const Teacher = require("../../models/TeacherModel");
+const Attendance = require("../../models/AttendanceModel");
+const AttendanceService = require("../../service/AttendanceService");
 
 class Attendance_Management {
   async markAttendance(req, res) {

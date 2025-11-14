@@ -1,5 +1,5 @@
 const EmployeeService = require("../service/EmployeeService");
-const { Teacher, User } = require("../models"); 
+const { Teacher, User } = require("../../models"); 
 
 
 

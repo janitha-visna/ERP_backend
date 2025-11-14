@@ -1,6 +1,6 @@
-const Training = require("../models/TrainingModel");
-const TrainingParticipant = require("../models/TrainingParticipantModel");
-const Teacher = require("../models/TeacherModel");
+const Training = require("../../models/TrainingModel");
+const TrainingParticipant = require("../../models/TrainingParticipantModel");
+const Teacher = require("../../models/TeacherModel");
 
 
 class Training_Management {

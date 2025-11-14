@@ -1,4 +1,4 @@
-const ChartOfAccount = require("../models/ChartOfAccountModel");
+const ChartOfAccount = require("../../models/ChartOfAccountModel");
 const { Op } = require("sequelize");
 
 class ChartOfAccounts {

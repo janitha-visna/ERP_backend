@@ -1,9 +1,9 @@
-const AttendanceService = require("../service/AttendanceService");
-const LeaveService = require("../service/LeaveService");
+const AttendanceService = require("../../service/AttendanceService");
+const LeaveService = require("../../service/LeaveService");
 
-const Leave = require("../models/LeaveModel");
-const Teacher = require("../models/TeacherModel");
-const User = require("../models/UserModel");
+const Leave = require("../../models/LeaveModel");
+const Teacher = require("../../models/TeacherModel");
+const User = require("../../models/UserModel");
 const { Op } = require("sequelize");
 
 class Leave_Management {

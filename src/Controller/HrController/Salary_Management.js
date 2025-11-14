@@ -1,10 +1,10 @@
-const Teacher = require("../models/TeacherModel");
-const SalaryStructure = require("../models/FeeStructureModel"); // or your SalaryStructure model
-const Payroll = require("../models/PayrollModel");
-const Attendance = require("../models/AttendanceModel");
-const Leave = require("../models/LeaveModel");
+const Teacher = require("../../models/TeacherModel");
+const SalaryStructure = require("../../models/FeeStructureModel"); // or your SalaryStructure model
+const Payroll = require("../../models/PayrollModel");
+const Attendance = require("../../models/AttendanceModel");
+const Leave = require("../../models/LeaveModel");
 const { Op } = require("sequelize");
-const User = require("../models/UserModel");
+const User = require("../../models/UserModel");
 
 class Salary_Management {
   async createSalaryStructure(req, res) {

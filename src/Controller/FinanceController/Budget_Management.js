@@ -1,6 +1,6 @@
-const Budget = require("../models/BudgetModel");
-const FinancialTransaction = require("../models/FinancialTransactionModel");
-const User = require("../models/UserModel");
+const Budget = require("../../models/BudgetModel");
+const FinancialTransaction = require("../../models/FinancialTransactionModel");
+const User = require("../../models/UserModel");
 const { Op } = require("sequelize");
 
 class Budget_Management {

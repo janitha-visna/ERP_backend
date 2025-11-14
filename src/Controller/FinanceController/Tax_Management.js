@@ -1,6 +1,6 @@
 const { Op } = require("sequelize");
-const Tax = require("../models/TaxModel");
-const User = require("../models/UserModel");
+const Tax = require("../../models/TaxModel");
+const User = require("../../models/UserModel");
 
 class Tax_Management {
   async createTax(req, res) {

@@ -1,6 +1,6 @@
-const PerformanceReview = require("../models/PerformanceReviewModel");
-const Teacher = require("../models/TeacherModel");
-const User = require("../models/UserModel");
+const PerformanceReview = require("../../models/PerformanceReviewModel");
+const Teacher = require("../../models/TeacherModel");
+const User = require("../../models/UserModel");
 
 
 class Performance_Management {

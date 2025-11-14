@@ -1,14 +1,14 @@
 const { Op, sequelize } = require("sequelize");
-const Teacher = require("../models/TeacherModel");
-const Attendance = require("../models/AttendanceModel");
-const Leave = require("../models/LeaveModel");
-const Recruitment = require("../models/RecruitmentModel");
-const Payroll = require("../models/PayrollModel");
-const Training = require("../models/TrainingModel");
-const TrainingParticipant = require("../models/TrainingParticipantModel");
-const JobApplication = require("../models/JobApplicationModel");
-const PerformanceReview = require("../models/PerformanceReviewModel");
-const User = require("../models/UserModel");
+const Teacher = require("../../models/TeacherModel");
+const Attendance = require("../../models/AttendanceModel");
+const Leave = require("../../models/LeaveModel");
+const Recruitment = require("../../models/RecruitmentModel");
+const Payroll = require("../../models/PayrollModel");
+const Training = require("../../models/TrainingModel");
+const TrainingParticipant = require("../../models/TrainingParticipantModel");
+const JobApplication = require("../../models/JobApplicationModel");
+const PerformanceReview = require("../../models/PerformanceReviewModel");
+const User = require("../../models/UserModel");
 
 
 class Hr_Dashboard {

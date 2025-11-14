@@ -1,5 +1,5 @@
-const FeeStructure = require("../models/FeeStructureModel");
-const User = require("../models/UserModel");
+const FeeStructure = require("../../models/FeeStructureModel");
+const User = require("../../models/UserModel");
 const { Op } = require("sequelize");
 
 class Fee_Management {

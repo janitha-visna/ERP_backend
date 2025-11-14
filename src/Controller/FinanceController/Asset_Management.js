@@ -1,6 +1,6 @@
-const Asset = require("../models/AssetsModel");
-const FinancialTransaction = require("../models/FinancialTransactionModel");
-const Teacher = require("../models/TeacherModel");
+const Asset = require("../../models/AssetModel");
+const FinancialTransaction = require("../../models/FinancialTransactionModel");
+const Teacher = require("../../models/TeacherModel");
 const { Op } = require("sequelize");
 
 class Asset_Management {

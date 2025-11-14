@@ -1,9 +1,9 @@
 const { Op } = require("sequelize");
-const Payment = require("../models/PaymentModel");
-const Invoice = require("../models/InvoiceModel");
-const Student = require("../models/StudentModel");
-const User = require("../models/UserModel");
-const FinancialTransaction = require("../models/FinancialTransactionModel");
+const Payment = require("../../models/PaymentModel");
+const Invoice = require("../../models/InvoiceModel");
+const Student = require("../../models/StudentModel");
+const User = require("../../models/UserModel");
+const FinancialTransaction = require("../../models/FinancialTransactionModel");
 
 class Payment_Management {
   async processPayment(req, res) {

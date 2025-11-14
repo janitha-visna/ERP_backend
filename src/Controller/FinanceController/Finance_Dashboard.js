@@ -1,13 +1,13 @@
 const { Op } = require("sequelize");
-const sequelize = require("../config/database"); // Sequelize instance
-const Payment = require("../models/PaymentModel");
-const Expense = require("../models/ExpenseModel");
-const Payroll = require("../models/PayrollModel");
-const Invoice = require("../models/InvoiceModel");
-const Budget = require("../models/BudgetModel");
-const FinancialTransaction = require("../models/FinancialTransactionModel");
-const User = require("../models/UserModel");
-const Student = require("../models/StudentModel");
+const sequelize = require("../../config/database"); // Sequelize instance
+const Payment = require("../../models/PaymentModel");
+const Expense = require("../../models/ExpenseModel");
+const Payroll = require("../../models/PayrollModel");
+const Invoice = require("../../models/InvoiceModel");
+const Budget = require("../../models/BudgetModel");
+const FinancialTransaction = require("../../models/FinancialTransactionModel");
+const User = require("../../models/UserModel");
+const Student = require("../../models/StudentModel");
 
 class Finance_Dashboard {
   async getFinanceDashboard(req, res) {

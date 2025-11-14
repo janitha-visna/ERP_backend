@@ -1,6 +1,6 @@
-const Expense = require("../models/ExpenseModel");
-const FinancialTransaction = require("../models/FinancialTransactionModel");
-const User = require("../models/UserModel");
+const Expense = require("../../models/ExpenseModel");
+const FinancialTransaction = require("../../models/FinancialTransactionModel");
+const User = require("../../models/UserModel");
 const { Op } = require("sequelize");
 
 class Expense_Management {

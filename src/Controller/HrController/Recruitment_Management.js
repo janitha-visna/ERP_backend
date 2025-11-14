@@ -1,6 +1,6 @@
-const Recruitment = require("../models/RecruitmentModel");
-const JobApplication = require("../models/JobApplicationModel");
-const User = require("../models/UserModel");
+const Recruitment = require("../../models/RecruitmentModel");
+const JobApplication = require("../../models/JobApplicationModel");
+const User = require("../../models/UserModel");
 
 
 class Recruitment_Management {
